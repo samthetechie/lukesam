@@ -1,6 +1,38 @@
-Git Cheatsheet
-==============
+Git 
+===
+
+Scripts
+=======
+
+git.sh
+------
+speeds up simple commits by chaining together add, commit and push commands in bash.
+
+$ cat git.sh
+#!/bin/bash
+read -p "Commit description: " desc
+git add . && \
+git add -u && \
+git commit -m "$desc" && \
+git push
+$ alias
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias g='~/lukesam/./git.sh'
+alias grep='grep --color=auto'
+alias ls='ls --color=auto'
+$ g
+Commit description: some message
+# On branch master
+nothing to commit (working directory clean)
+samthetechie@babbage:~/lukesam$ 
+
+
+
+Cheatsheet
+==========
 source: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
 
 markdown
 ========
