@@ -45,7 +45,7 @@ $ ctrl + a then type :multiuser on
 
 $ ctrl + a then type :acladd user2 (the user that wants to connect)
 
-Then user2 connects to user1's screen:
+  Then user2 connects to user1's screen:
 
 $ ssh user2@server (e.g. the London Hackspace Server, Babbage)
 
@@ -63,21 +63,21 @@ $ ctrl + a tab  cycle between split screens
 
 $ ctrl + a c to create a new screen session to fill that window (if blank)
 
-alternatively
+  alternatively
 
 $ ctrl + a # to connect to an existing screen (where # is a number)
 
 4. Exiting / Disconnecting
 
-To exit (permanently):
+  To exit (permanently):
 
 $ exit
 
-To disconnect (you can reconnect by using screen -r)
+  To disconnect (you can reconnect by using screen -r)
 
 $ ctrl + a d  
 
-Common errors:
+  Common errors:
 
     Sometimes it may say "screen already attached" in which case:
 
@@ -91,5 +91,5 @@ $ screen -d 31134
 
     then reconnect as normal
 
-Any after the session, you can view all the commands that were typed by looking at the .screenlog
+  Any after the session, you can view all the commands that were typed by looking at the .screenlog
 
