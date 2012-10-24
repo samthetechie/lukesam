@@ -1,5 +1,9 @@
-Howto Collaborate in Realtime using screen / Working with another developer on Linux server.
+Howto Collaborate in Realtime using screen 
+==========================================
+Working concurrently with another developer on Linux server.
+
 1. Permissions when Creating a Screen Session
+---------------------------------------------
 
     Note the directory that screen session starts in, by default when you login you are probably in a home folder.
 
@@ -26,7 +30,10 @@ $ sudo usermod -G groupname -a user2
     change the permissions on the folder
 
 $ sudo chown user1:groupname ~/foldername
+
 2. Creating a shared screen session
+-----------------------------------
+
 scenario: user1 wants user2 to join a shared screen session.
 
     So user1 creates the screen session
@@ -51,7 +58,8 @@ $ ssh user2@server (e.g. the London Hackspace Server, Babbage)
 
 $ screen -x user1/foobar (the user that user2 is trying to connect to)
 
-3. Splitting a screen session (windows)
+3. Splitting a screen session (in terminal, into windows)
+---------------------------------------
 
 $ ctrl + a |     split screen vertially
 
@@ -68,6 +76,7 @@ $ ctrl + a c to create a new screen session to fill that window (if blank)
 $ ctrl + a # to connect to an existing screen (where # is a number)
 
 4. Exiting / Disconnecting
+--------------------------
 
   To exit (permanently):
 
