@@ -44,27 +44,45 @@ $ ctrl + a then type :multiuser on
     Add connecting user to the Access Control List
 
 $ ctrl + a then type :acladd user2 (the user that wants to connect)
+
 Then user2 connects to user1's screen:
+
 $ ssh user2@server (e.g. the London Hackspace Server, Babbage)
+
 $ screen -x user1/foobar (the user that user2 is trying to connect to)
+
 3. Splitting a screen session (windows)
+
 $ ctrl + a |     split screen vertially
+
 $ ctrl + a S    split screen horizontally
+
 $ ctrl + a Q    close split screens
+
 $ ctrl + a tab  cycle between split screens
+
 $ ctrl + a c to create a new screen session to fill that window (if blank)
+
 alternatively
+
 $ ctrl + a # to connect to an existing screen (where # is a number)
+
 4. Exiting / Disconnecting
+
 To exit (permanently):
+
 $ exit
+
 To disconnect (you can reconnect by using screen -r)
+
 $ ctrl + a d  
+
 Common errors:
 
     Sometimes it may say "screen already attached" in which case:
 
 $ screen -ls
+
 31134.pts-10.servername    (08/10/12 14:55:48)    (Attached)
 
     then get the screen number
